@@ -3,13 +3,13 @@ import './App.css';
 
 function App(props) {
   return (
-    <div className="todoapp stack-large">
+    <div className="todoapp stack-large">// the title of the project
       <h1>TodoMatic</h1>
       <form>
         <h2 className="label-wrapper">
           <label htmlFor="new-todo-input" className="label__lg">
             What needs to be done?
-          </label>
+          </label>// this is the label for the text box used to add tasks
         </h2>
         <input
           type="text"
@@ -17,11 +17,11 @@ function App(props) {
           className="input input__lg"
           name="text"
           autoComplete="off"
-        />
+        />// the text box and the sumbit button under it
         <button type="submit" className="btn btn__primary btn__lg">
           Add
         </button>
-      </form>
+      </form>//the end of the thia could be its own part
       <div className="filters btn-group stack-exception">
         <button type="button" className="btn toggle-btn" aria-pressed="true">
           <span className="visually-hidden">Show </span>
@@ -37,16 +37,16 @@ function App(props) {
           <span className="visually-hidden">Show </span>
           <span>Completed</span>
           <span className="visually-hidden"> tasks</span>
-        </button>
+        </button>// the buttons to sort the list
       </div>
       <h2 id="list-heading">
         3 tasks remaining
-      </h2>
+      </h2>//the tittle for tak to be done
       <ul
         role="list"
         className="todo-list stack-large stack-exception"
         aria-labelledby="list-heading"
-      >
+      >// an unordered list of task to be completed with check boxes adn the ability to edit them span below
         <li className="todo stack-small">
           <div className="c-cb">
             <input id="todo-0" type="checkbox" defaultChecked={true} />
